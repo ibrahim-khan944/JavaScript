@@ -1,0 +1,12 @@
+.add {
+  padding: 5px 15px;
+  background-color: lightgreen;
+  border-radius: 10px;
+  border: none;
+}
+.whi {
+  padding: 5px 30px;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-transform: uppercase;
+}

@@ -1,0 +1,113 @@
+
+
+body {
+  font-family: Assistant,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  display: flex;
+}
+.navbar{
+  display: flex;
+  margin-left:65% ;
+  width: 20%;
+}
+div a {
+  margin: 0;
+  padding: 0;
+}
+.apps {
+  width: 40px;
+}
+.first, .second {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;    
+}
+
+  .images{
+margin-left: 25px;
+  }
+
+.gmail, .images {
+  text-decoration: none;
+  color: black;
+ 
+  margin: 20px;
+  font-size: 20px;
+}
+.account{ 
+margin-left: 55px;
+border-radius: 50px;
+}
+.google {
+ width: 100%;
+ text-align: center;
+ margin-top: 10px ;
+ margin-bottom: 10px ;
+}
+.g-image{
+  width: 20%;
+}
+.d-input {
+  position: relative;
+  width: 300px;
+  margin-left: 38%;
+}
+  .d-input input {
+  width: 100%;
+  padding: 10px 15px 10px 40px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+          }
+  .d-input i {
+    position: absolute;
+    top: 50%;
+   left: 10px;
+     transform: translateY(-50%);
+  color: #aaa;
+   font-size: 18px;
+          }
+.last {
+text-align: center;
+margin: 65px;
+
+}
+.gs, .fl{
+  text-decoration: none;
+  color: black;
+background-color: rgb(229, 230, 231);
+padding: 13px;
+border-radius: 12px;
+margin: 7px;
+}
+ .footer{
+  background-color: rgb(241, 239, 239);
+  margin-top: 14%;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 350;
+ }
+ .footer a {
+  text-decoration: none;
+  color: black;
+ }
+ .f1{
+  padding: 20px 40px;
+  border-bottom: 1px solid rgb(189, 188, 188);
+ }
+ .f2 {
+  display: flex;
+  padding: 20px ;
+ }
+ .f2 a {
+  padding: 20px;
+ }
+ .privacy {
+  margin-left: 35%;
+ }

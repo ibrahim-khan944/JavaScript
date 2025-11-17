@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="p.css">
+  <title>Document</title>
+</head>
+<body>
+  <button class="add" onclick="
+    cartquantity = cartquantity+1;
+    document.querySelector('#khan').innerHTML =
+    ` your bag has ${cartquantity} items`
+    ">add to bag</button>
+
+<button class="whi" onclick="document.querySelector('#khan').innerHTML =
+` your bag has ${cartquantity} items`
+cartquantity--;
+"> move to whishlist</button>
+
+<button class="add" onclick="cartquantity+=2;
+ document.querySelector('#khan').innerHTML =
+  ` your bag has ${cartquantity} items`
+">add 1+1 sale item</button>
+
+<h1 id="khan"></h1>
+<script>
+  let cartquantity = 0
+  document.querySelector('#khan').innerHTML =
+` your bag has ${cartquantity} items`;
+let p = 3.43223;
+let r = 2 ;
+
+console.log(p*r*r);
+</script>
+</body>
+</html>

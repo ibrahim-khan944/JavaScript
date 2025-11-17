@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+  body {
+    text-align: center;
+  }
+ </style>
+  <title>bat ball stmp game</title>
+</head>
+<body>
+  
+  <h1>bat ball  stump game</h1>
+  <button onclick="
+userchoice = 'your choice is bat';
+ let computerchoice;
+ let gn = Math.random()*3;
+ if (gn > 0 && gn <=1) {
+  computerchoice = 'bat'
+  //console.log('compter choice is bat');
+  
+ }
+ else if (gn > 1 && gn <=2) {
+ computerchoice = 'ball'
+  //console.log('compter choice is ball');
+  
+ }
+ else {
+   computerchoice = 'stump'
+  //console.log('compter choice is stump');
+  
+ }
+//  console.log(`computer choice is ${computerchoice}`);
+
+ let finall;
+ if (computerchoice === 'ball') {
+  finall = 'user won';
+ }
+ else if (computerchoice === 'bat') {
+  finall = 'its a tie'
+ }
+ else if (computerchoice === 'stump') {
+  finall ='computer won'
+ }
+ alert(`${userchoice}. computer choice is ${computerchoice} ${finall}`);"
+  >Bat</button>
+
+
+  <button onclick="
+  userchoice = 'your choice is ball';
+ gn = Math.random()*3;
+   if (gn > 0 && gn <=1) {
+    computerchoice = 'bat';  
+   }
+   else if (gn > 1 && gn <=2) {
+   computerchoice = 'ball'
+   }
+   else {
+     computerchoice = 'stump';
+   }
+
+   if (computerchoice === 'ball') {
+    finall = 'its a tie  ';
+   }
+   else if (computerchoice === 'bat') {
+    finall = 'computer won'
+   }
+   else if (computerchoice === 'stump') {
+    finall ='user won'
+   }
+
+   alert(`${userchoice}. computer choice is ${computerchoice} ${finall}`);
+   
+    ">Ball</button>
+
+
+
+  <button  onclick="
+  userchoice = 'your choice is stump';
+ gn = Math.random()*3;
+   if (gn > 0 && gn <=1) {
+
+    computerchoice = 'bat';  
+   }
+
+   else if (gn > 1 && gn <=2) {
+   computerchoice = 'ball'
+   }
+
+   else {
+     computerchoice = 'stump';
+   }
+  
+   if (computerchoice === 'ball') {
+    finall = 'computer won';
+   }
+   else if (computerchoice === 'bat') {
+    finall = 'user won'
+   }
+   else if (computerchoice === 'stump') {
+    finall ='it is tie'
+   }
+
+   alert(`${userchoice}. computer choice is ${computerchoice} ${finall}`);
+   
+    ">Stump</button> 
+    
+</body>
+</html>

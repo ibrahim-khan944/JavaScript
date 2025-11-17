@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>practice exercise</title>
+  <style>
+    #ok {
+      width: 50px;
+      height: 50px;
+    }
+    .even{
+      background-color: green;
+    }
+    .odd{
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="ho"></h1>
+ 
+  <script>
+function how(person = 'khan') {
+   let date = new Date();
+   let h =date.getHours()
+ 
+  let dom = document.querySelector('#ho');
+    if(h>5 && h < 12){
+      dom.innerText = `good morning  ${person}`;
+    }
+    else if(h>12 && h < 18){
+      dom.innerText = `good evening ${person}`;
+    }
+   else{
+      dom.innerText = `good afternoon ${person}`;
+    }
+}
+   how('dada')
+
+
+  </script> 
+  <button id="ok" onclick="button()">0</button>
+  <script>
+    let press = 0;
+    function button() {
+  console.log('pres');
+  press++;
+   let x = document.querySelector("#ok");
+   if (press % 2 === 0) {
+    x.classList.remove('odd');
+    x.classList.add('even')
+   }
+   else{
+    x.classList.remove('even');
+    x.classList.add('odd');
+   }
+   x.innerHTML = press;
+}
+  </script>
+</body>
+</html>
