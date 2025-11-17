@@ -1,0 +1,21 @@
+#d1 {
+  width: 100px;
+  height: 100px;
+  background: darkorange;
+  margin: 10px;
+  text-align: center;
+};
+.light {
+  background-color: white;
+  color: black;
+}
+.dark {
+  background-color: black;
+  color: white;
+}
+.h3{
+  background-color: black;
+}
+.h4{
+  color: white;
+}

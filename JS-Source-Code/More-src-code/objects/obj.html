@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <style>
+    .sub-but{
+      font-size: 14px;
+      height: 25px;
+      width: 80px;
+    background-color: rgb(161, 9, 9);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    }
+    .size-double{
+      font-size: 24px;
+      height: 60px;
+      width: 160px;
+    }
+    
+  </style>
+</head>
+<body> 
+         <!-- // 2
+           
+ <button class="sub-but">subscribe</button>
+  <script>
+    let element = document.querySelector('.sub-but')
+    element.addEventListener('click',event =>
+      setTimeout(doublesize,2000))
+    
+    function doublesize() {
+      let element = document.querySelector('.sub-but');
+      element.classList.add('size-double');
+    }
+    
+    
+  </script>  -->
+  <script>
+           // 1 
+    // let m = function khan(n1 , n2 ) {
+    //   return n1 * n2 ;
+    // }
+    // console.log(m(3,4));
+    
+    // let mu = (n1 ,n2) => n1 * n2 ;
+    // console.log(mu(3,4));
+
+             // 2 
+
+    // let first = () => console.log("hello bro");
+    // let second = hello => {
+    //   hello(); hello();
+    // }
+    // console.log(second(first));
+        
+    // let first = () => console.log("hello bro");
+    // let i = function (ok) {
+    //   ok();
+    //   ok()
+    // }
+    // console.log(i(first));
+    
+//     let f =  function g() {
+//       console.log("how");
+//     };
+// let b = function h(g) {
+//   g();
+//   g();
+// }
+//   console.log(b(f));
+
+ //     3    ;
+
+    //   let a =[1,2,3,4,5,6];
+    //   let s = 0 ;
+    //   for (let i = 0; i < a.length; i++) {
+    //   const element = s+=a[i];
+    //   console.log(element);
+    //  }
+
+      // let a = [1,2,3,4,5,6]
+      // let s = 0 ;
+      // a.forEach(b =>console.log(s+=b) );
+      // console.log(s);
+           //    4       ;
+
+        // let a = [1,2,3,4,5,7]
+        // let v = a.map(a => a*a)
+        // console.log(v);
+        
+        // let m = a.filter(v => v%2 === 1)
+        // console.log(m);
+        // let ok =prompt('are you ok');
+        // alert(ok)
+
+        let man = confirm('do you wished to drive car');
+       let name = prompt('what your name');
+       let age = prompt('what is your age');
+       if (age >= 20) {
+        alert(`sure ${name} you can drive`)
+       }else{
+        alert(`no ${name} you can not drive because your age is ${age}`)
+       }
+</script> 
+ </body>
+</html>
