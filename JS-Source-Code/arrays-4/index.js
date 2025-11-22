@@ -1,5 +1,7 @@
 // let a = "khan g"
 // let b = a.split("")
+// console.log(b);
+
 // b[0] = "n";
 // a = b.join("");
 // console.log(a);
@@ -10,8 +12,6 @@
 //   b:  "ok",
 //   c : "bro",
 // };
-  
-
 // for(let i in n){
 //   let r = `"key =", ${i},  "value = " ${n[i]}`
 //   console.log(r);
@@ -19,18 +19,16 @@
 
 
 // let marks = [90, 40, 60, 70];
-// for (let i = 0 ; i < marks.length; i++) {
+// for (let i = 1 ; i < marks.length; i++) {
 // console.log(i,marks[i]);
 // }
 
 // for (let mark of marks) {
 //   console.log(mark);
-//   console.log(mark);
 // }
 
 // let cities=["peshawar","multan","lahore","faisalabad"]
 // for(let i = 0 ; i < cities.length ; i++){
-
 //   console.log(cities[i].toUpperCase());
 // }
 
@@ -44,7 +42,7 @@
 // let v = n.pop()
 // console.log(v);
 
-// let n = [1,2,3,4,5,6];  // to strin is immutable
+// let n = [1,2,3,4,5,6];  // to string is immutable
 // console.log(n);
 // console.log(n.toString());
 // console.log(n);

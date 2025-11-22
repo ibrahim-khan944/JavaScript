@@ -1,41 +1,40 @@
-let bagitems ;
-     
+let bagitems;
 onload();
- 
-function onload(){
- let bagitemsstr = localStorage.getItem('bagitems');
- bagitems = bagitemsstr ? JSON.parse(bagitemsstr) : [] ;
 
-displayitemsonhomepaage();
-dispalybagicon(); 
+function onload() {
+  let bagitemsstr = localStorage.getItem('bagitems');
+  bagitems = bagitemsstr ? JSON.parse(bagitemsstr) : [];
+
+  displayitemsonhomepaage();
+  dispalybagicon();
 }
 
-function addtobage(itemid){
-bagitems.push(itemid);
-localStorage.setItem('bagitems' , JSON.stringify(bagitems))
-dispalybagicon();
+function addtobage(itemid) {
+  bagitems.push(itemid);
+  localStorage.setItem('bagitems', JSON.stringify(bagitems))
+  dispalybagicon();
 }
 
-function dispalybagicon(){
- let bagitemcountelement = document.querySelector('.bag-item-count');
- if (bagitems.length > 0) {
+function dispalybagicon() {
+  let bagitemcountelement = document.querySelector('.bag-item-count');
+  if (bagitems.length > 0) {
     bagitemcountelement.style.visibility = 'visible';
-   bagitemcountelement.innerText = bagitems.length;
- }
- else{
-   bagitemcountelement.style.visibility = 'hidden' ;
- }
+    bagitemcountelement.innerText = bagitems.length;
+  }
+  else {
+    bagitemcountelement.style.visibility = 'hidden';
+  }
 }
- function displayitemsonhomepaage(){
+function displayitemsonhomepaage() {
 
-let itemscontainerelemnt = document.querySelector('.items-container');
-if(!itemscontainerelemnt){
-return;
-}
+  let itemscontainerelemnt = document.querySelector('.items-container');
+  if (!itemscontainerelemnt) {
+    return;
+  }
 
-let innerHTML = '' ;
-items.forEach(item => {
-innerHTML += `<div class="item-container">
+  let innerHTML = '';
+  items.forEach(item => {
+    innerHTML += `<div class="item-container">
        <img class="item-image" src=" ${item.image}"
         alt="myntra logo here">
        <div class="rating">
@@ -50,7 +49,7 @@ innerHTML += `<div class="item-container">
        </div>
        <button class="btn-add-bag" onclick= "addtobage(${item.id})">Add to bag</button>
      </div>`
-})
+  })
 
-itemscontainerelemnt.innerHTML = innerHTML ;
+  itemscontainerelemnt.innerHTML = innerHTML;
 }

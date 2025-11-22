@@ -1,4 +1,4 @@
-const baseurl= "https://v6.exchangerate-api.com/v6/YOUR_API_KEY/latest/USD"
+// const baseurl= "https://api.currencyapi.com/v3/latest?apikey=YOUR_API_KEY&base_currency=USD"
 
 let dropdowns = document.querySelectorAll(".dropdown select")
 let btn = document.querySelector("form button")
@@ -31,16 +31,22 @@ const updatef = (element) => {
   img.src = newsrc;
 }
 
-btn.addEventListener("click",async (evt) => {
-  evt.preventDefault()
-  let amount = document.querySelector(".amount input")
+btn.addEventListener("click", async (evt) => {
+  evt.preventDefault();
+
+  let amount = document.querySelector(".amount input");
   let amtval = amount.value;
+
   if (amtval === "" || amtval < 1) {
     amtval = 1;
-    amount.value = "1"
+    amount.value = "1";
   }
-  const url = `${baseurl}/${fromc.value.toLowerCase()}/${toc.value.toLowerCase()}.json`
-let response = await fetch(url)
-console.log(response);
 
-})
+  const url = `https://api.frankfurter.app/latest?amount=${amtval}&from=${fromc.value}&to=${toc.value}`;
+  let response = await fetch(url);
+  let data = await response.json();
+  let finalAmount = data.rates[toc.value];
+  console.log("Converted Amount:", finalAmount);
+  document.querySelector(".result").innerText =
+    `${amtval} ${fromc.value} = ${finalAmount} ${toc.value}`;
+});

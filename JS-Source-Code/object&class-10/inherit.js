@@ -1,7 +1,6 @@
 // class greet {
 //   say() {
 //     console.log('hello');
-
 //   }
 // }
 
@@ -74,12 +73,12 @@
 //       console.log('data = ', data);
 //     }
 //   }
-  // let obj1 = new user("khan","testemail&.com");
-  // let obj2 = new user("hamza","hamza&gmail.com");
-  // let teacher = new user("physics","physics&gmail.com");
-  // console.log(obj1);
-  // console.log(obj2);
-  // console.log(teacher.viewdata());
+//   let obj1 = new user("khan","testemail&.com");
+//   let obj2 = new user("hamza","hamza&gmail.com");
+//   let teacher = new user("physics","physics&gmail.com");
+//   console.log(obj1);
+//   console.log(obj2);
+//   console.log(teacher.viewdata());
   
     //  ** practise questions 2 ** \\
 
@@ -91,7 +90,7 @@
     //   data = "some new value"
     //  }
     // }
-    // let ob = new admin("name",'email');
+    // let ob = new admin("khan",'@test.com');
     // console.log(ob);
     
     

@@ -12,7 +12,7 @@
 // }
 // return count;
 // }
-// console.log(find("helo"));
+// console.log(find("hello"));
 
 // let a = str => {
 //   let count = 0 ;
@@ -35,7 +35,6 @@
 // arr.forEach((val) => {
 // let a = val * val ; // val**2
 // console.log(a);
-
 // })
 
 // let arr = [1,2,3,4,5,6,7];
@@ -62,12 +61,14 @@
 // for(let i = 1 ; i <= n ; i++){
 // arr[i-1] = i
 // };
-// console.log("gnerate no = ",arr);
+// console.log("gnerate no = ", arr);
+
+
 // let add = arr.reduce((r,c)=>{
 // return r + c
 // });
-
 // console.log("addition of arr = ",add);
+
 // let factorial = arr.reduce((r,c)=>{
 // return r * c
 // });

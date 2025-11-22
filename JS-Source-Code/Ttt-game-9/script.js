@@ -30,9 +30,8 @@ buttons.forEach((box) => {
       turn0 = false
     }
     else {
-      let a = "x"
-      box.innerText = a;
-      a.classList.add("box1")
+      box.innerText = 'x';
+      box.classList.add("box1")
       turn0 = true
     };
     box.disabled = true;

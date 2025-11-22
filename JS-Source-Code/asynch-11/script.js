@@ -34,12 +34,6 @@
 
 //       Asynch   :
 
-// let he = ()=>{
-//   console.log("hello");
-
-// }
-// setTimeout(he,2000);
-
 // function calldata(data,nextdata){
 // setTimeout(()=>{
 //     console.log("Data id = ",data);
@@ -49,9 +43,11 @@
 // },2000)
 // };
 
-// calldata(1,()=>{
-//   calldata(2,()=>{
-//     calldata(3)
+// calldata(2,()=>{
+//   calldata(3,()=>{
+//     calldata(4,()=>{
+//       console.log("hello");      
+//     })
 //   })
 // });
 
@@ -67,7 +63,7 @@
 //  return new Promise((resolve,reject)=>{
 //   setTimeout(()=>{
 //   console.log("the data is = ", d); 
-//    reject("success")
+//    resolve("success")
 //   },5000)
 //  })
 
@@ -78,8 +74,8 @@
 // let getpromise = () => {
 // return new Promise((resolve, reject) => {
 //   console.log("hello");
-//   resolve("success")
-// //   reject("error")
+//   // resolve("success")
+//   reject("error")
 // })
 // }
 // let promise = getpromise();
@@ -96,7 +92,7 @@
 //   setTimeout(()=>{
 //     console.log("fetched");
 //     resolve("success")
-//   },5000) 
+//   },2000) 
 // })
 // }
 
@@ -108,8 +104,6 @@
 //   },3000) 
 // })
 // }
-// console.log("data1 is fetching ...");
-
 // let a1 = asyn1()
 // a1.then((res)=>{
 //   console.log(res);
@@ -145,38 +139,38 @@
       //async-await   ;  
        
  
-//      function api(){
-//         return new Promise ((resolve,reject)=>{
-//      setTimeout(()=>{
-//           console.log("weather");
-//           resolve("200")
-//      },2000)     
-//         })
-//       }
+  //    function api(){
+  //       return new Promise ((resolve,reject)=>{
+  //    setTimeout(()=>{
+  //         console.log("weather");
+  //         resolve("200")
+  //    },2000)     
+  //       })
+  //     }
 
-//    async function getdata(){
-//    await api();
-//    await api();
-//    }
-//    getdata() ;
+  //  async function getdata(){
+  //  await api();
+  //  await api();
+  //  }
+  //  getdata() ;
 
-  function setdata(data){
-  return new Promise((resolve,reject)=>{
-    setTimeout(()=>{
-    console.log("Data id = ",data);
-    resolve("resolve")
-},2000)
-  })
-};
+//   function setdata(data){
+//   return new Promise((resolve,reject)=>{
+//     setTimeout(()=>{
+//     console.log("Data id = ",data);
+//     resolve("resolve")
+// },2000)
+//   })
+// };
 
-async function calldata() {
-      await setdata(1);
-      await setdata(2);
-      await setdata(3);
-      await setdata(4);
-      await setdata(5);
-}
-calldata()
+// async function calldata() {
+//       await setdata(1);
+//       await setdata(2);
+//       await setdata(3);
+//       await setdata(4);
+//       await setdata(5);
+// }
+// calldata()
 
     // imediately invoked function  (.. IIFE ..)
 // (

@@ -2,7 +2,7 @@
 //   name : 'khan',
 //   marks : 90 ,
 //   printmarks : function () {
-//     console.log('ma=rks = ',student.name);
+//     console.log('marks = ',student.name);
 //     console.log('marks = ',this.name);
 //   }
 // }
@@ -75,15 +75,15 @@
 // st3.setstudent("mashal");
 // console.log(st3);
 
-// class car{
-// stop(){
-//   console.log('stop');
-// }
-// constructor(bro,mileage){
-//   this.brandname = bro ;
-//   this.mileage = mileage ;
-//   console.log('constructor automatically invoked');
-// }
+// class car {
+//   stop() {
+//     console.log('stop');
+//   }
+//   constructor(bro, mileage) {
+//     this.brandname = bro;
+//     this.mileage = mileage;
+//     console.log('constructor automatically invoked');
+//   }
 // }
 
 // let honda = new car('honda',500);
@@ -93,15 +93,11 @@
 // civic.mileage = 200 ;
 // console.log(civic);
 
-let a = 2;
-let b = 4;
-console.log(a+b);
-console.log(a+b);
-try {
-  console.log(a*c);
-} catch (e) {
-  console.log(e);
-}
-console.log(a+b);
-console.log(a+b);
-console.log(a+b);
+// let a = 2;
+// let b = 4;
+// console.log(a+b);
+// try {
+//   console.log(a*c);
+// } catch (e) {
+//   console.log(e,"error");
+// }

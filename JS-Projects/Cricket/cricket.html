@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <style>
-  body {
-    text-align: center;
-  }
- </style>
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
   <title>bat ball stmp game</title>
 </head>
+
 <body>
-  
-  <h1>bat ball  stump game</h1>
+
+  <h1>bat ball stump game</h1>
   <button onclick="
 userchoice = 'your choice is bat';
  let computerchoice;
  let gn = Math.random()*3;
  if (gn > 0 && gn <=1) {
   computerchoice = 'bat'
-  //console.log('compter choice is bat');
-  
  }
  else if (gn > 1 && gn <=2) {
- computerchoice = 'ball'
-  //console.log('compter choice is ball');
-  
+ computerchoice = 'ball'  
  }
  else {
    computerchoice = 'stump'
-  //console.log('compter choice is stump');
   
  }
-//  console.log(`computer choice is ${computerchoice}`);
+ console.log(`computer choice is ${computerchoice}`);
 
  let finall;
  if (computerchoice === 'ball') {
@@ -42,8 +39,7 @@ userchoice = 'your choice is bat';
  else if (computerchoice === 'stump') {
   finall ='computer won'
  }
- alert(`${userchoice}. computer choice is ${computerchoice} ${finall}`);"
-  >Bat</button>
+ alert(`${userchoice}. computer choice is ${computerchoice} ${finall}`);">Bat</button>
 
 
   <button onclick="
@@ -60,7 +56,7 @@ userchoice = 'your choice is bat';
    }
 
    if (computerchoice === 'ball') {
-    finall = 'its a tie  ';
+    finall = 'its a tie';
    }
    else if (computerchoice === 'bat') {
     finall = 'computer won'
@@ -75,18 +71,15 @@ userchoice = 'your choice is bat';
 
 
 
-  <button  onclick="
+  <button onclick="
   userchoice = 'your choice is stump';
  gn = Math.random()*3;
    if (gn > 0 && gn <=1) {
-
     computerchoice = 'bat';  
    }
-
    else if (gn > 1 && gn <=2) {
    computerchoice = 'ball'
    }
-
    else {
      computerchoice = 'stump';
    }
@@ -103,7 +96,8 @@ userchoice = 'your choice is bat';
 
    alert(`${userchoice}. computer choice is ${computerchoice} ${finall}`);
    
-    ">Stump</button> 
-    
+    ">Stump</button>
+
 </body>
+
 </html>

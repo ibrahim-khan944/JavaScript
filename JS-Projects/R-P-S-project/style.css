@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   text-align: center;
+  overflow: hidden;
 }
 h1 {
   background-color: #081b31;

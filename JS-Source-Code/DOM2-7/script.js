@@ -21,7 +21,7 @@
 // let style = st.style.backgroundColor = "green";
 // let vis = st.style.visibility = "hidden";
 
-// insert element ;
+// // insert element ;
 // let bu = document.createElement("button");
 // bu.innerText = "click";
 // let div = document.querySelector("div")

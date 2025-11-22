@@ -10,11 +10,10 @@
 
 <body>
   <div id="div">
-      <button id="b1">click</button>
-  <h3 id="d1" onclick="console.log('from inline event');
-  ">mouse over event</h3>
-  <button id="b2">Toggle</button>
-  <h3 class="h3">Class List </h3>
+    <button id="b1">click</button>
+    <h3 id="d1">mouse over event</h3>
+    <button id="b2">Toggle</button>
+    <h3 class="h3">Class List </h3>
   </div>
 
   <script>
@@ -28,7 +27,7 @@
     // }
 
     // let d1 = document.querySelector('#d1');
-    
+
     //   //     eventlistner  ;
     //  d1.addEventListener('mouseover',function(){
     //   console.log('hello');
@@ -37,31 +36,30 @@
     //  let same = function(){
     //   console.log('hello 23');
     //  }
-    //  d1.addEventListener('mouseover', same);
-   
+    //  d1.addEventListener("dblclick", same);
     //  d1.removeEventListener('mouseover',same)
-   
-    let b2 = document.querySelector('body');
-    let mood = 'light';
-   b2.addEventListener('click', ()=>{
-    if(mood === 'light'){
-      mood = 'dark'; 
-         b2.classList.add("dark")
-      b2.classList.remove("light")
-      // b2.style.backgroundColor = "black"
-    }
-    else{
-      mood = 'light'; 
-       b2.classList.add("light");
-      b2.classList.remove("dark")
-      // b2.style.backgroundColor = "white"
-    }
-    console.log(mood);
-    
-   });
-  
-   let he = document.querySelector('.h3');
-   he.classList.add('h4')
+
+    // let b2 = document.querySelector('body');
+    // let mood = 'light';
+    // b2.addEventListener('click', () => {
+    //   if (mood === 'light') {
+    //     mood = 'dark';
+    //     b2.classList.add("dark")
+    //     b2.classList.remove("light")
+    //     b2.style.backgroundColor = "black"
+    //   }
+    //   else {
+    //     mood = 'light';
+    //     b2.classList.add("light");
+    //     b2.classList.remove("dark")
+    //     b2.style.backgroundColor = "white"
+    //   }
+    //   console.log(mood);
+
+    // });
+
+    // let he = document.querySelector('.h3');
+    // he.classList.add('h4')
   </script>
 </body>
 

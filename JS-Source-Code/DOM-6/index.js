@@ -6,7 +6,7 @@
 // console.log(body);
 
 // console.dir(document.body.childNodes[2])
-// let h1 = document.getElementById("h");
+// let h1 = document.getElementById("h1");
 // console.dir(h1);
 
 // let headings = document.getElementsByClassName("heading")

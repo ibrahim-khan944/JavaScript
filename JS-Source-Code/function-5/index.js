@@ -34,7 +34,6 @@
 // let str = ["ab","cd" ,"fg", "gh"];
 // str.forEach(function ok(val){
 //   console.log(val.toUpperCase());
-
 // })
 
 // let arr = [1,2,3,4,5,6,7];
@@ -65,8 +64,8 @@
 // console.log(arr.filter(filter));
 
 // let arr = [1,2,3,4];
-// let out  = arr.reduce((res,cur)=>{
-// return res * cur
+// let out  = arr.reduce((pre,cur)=>{
+// return pre * cur
 // });
 // console.log(out);
 
@@ -90,9 +89,6 @@
 //   console.log("The sum of the numbers is: " + sum);
 //   alert("The sum of the numbers is: " + sum); // Optional: Show result in alert
 // }
-
-// // Call the function
-// addNumbers();
 
 //first task
 
@@ -138,8 +134,8 @@
 //   if(i%2 === 0){
 //     console.log(i);
 //   }
-
 //  }
+
 // let num =[1,2,3,4,5,6,7,8];
 // num.push(4);
 // console.log(num);

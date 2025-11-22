@@ -28,11 +28,11 @@
 // do {
 //   console.log("i =",i);
 //   i++;
-  
+
 // } while (i <= 10);
 
-//for-of loop ;
-// let str = "ibraheem";
+// // for-of loop ;
+// let str = "ibrahim";
 // let size = 0;
 // for (const i of str) {
 //   console.log("i =",i);
@@ -40,15 +40,15 @@
 // }
 // console.log(size);
 
-// let str = ["ibraheem","khan g" ,"uzair"];
-// let size = 0;
-// for (const i of str) {
+// let stri = ["ibraheem","khan g" ,"uzair"];
+// let sizes = 0;
+// for (const i of stri) {
 //   console.log("i =",i);
-//   size++;
+//   sizes++;
 // }
-// console.log("sizw =",size);
+// console.log("size =",sizes);
 
-//for in loop ;
+// // for in loop ;
 
 // let student = {
 //   name : "khan",
@@ -56,9 +56,9 @@
 //   emil :"@test",
 // }
 // for(let key in student){
-//   console.log("key =",key ,"value =", student[key]);
-  
-// }
+//   console.log("key =",key + " : " +"value =", student[key]);
+//   }
+
 // console.log("hello\nkhang"); //next line
 // console.log("hello\tkhang");  //ta space
 
@@ -68,16 +68,16 @@
 //  let b =  a.toUpperCase();
 //  console.log(b);
 
-//  let c = "   hello boy  how   ";
+//  let c = "hello boy  how  ";
 //  console.log(c.length);
- 
+
 //  let tri = c.trim()
 //  console.log(tri.length);
- 
-//  let a = "abcde" ;
-//  let b = a.slice(1,3)
+
+//  let a = "abcde";
+//  let b = a.slice(2,4)
 //  console.log(b);
- 
+
 // let c = "hello";
 // let d = c.concat(" ",a)
 // console.log(d);
@@ -106,10 +106,10 @@
 //   console.log(i);
 // }
 
-//  let i = 50;
+// let i = 50;
 // do {
-// if(i %2 ==1){
-//    console.log(i);
-// }
-//   i--;  
+//   if (i % 2 == 1) {
+//     console.log(i);
+//   }
+//   i--;
 // } while (i > 1);
